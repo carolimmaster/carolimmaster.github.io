@@ -1,0 +1,52 @@
+body {
+	background-image: url("./cement.jpg");
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: yellow;
+	height: 50px;
+	width: 100%;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	height: 50px;
+	width: 250px;
+	padding: 10px;
+}
+
+nav a:hover{
+	background-color: seashell;
+	color: black;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	color: blue;
+	background-color: grey;
+}
+
+p{
+	text-align: justify;
+	padding-left: 16px;
+}	
+
+p.surligne{
+	background-color: seashell;
+}
+
+#cadre1, #cadre2 {
+	background-color: slateblue;
+}
+
+p span
+ {
+	background-color: yellow;
+}
