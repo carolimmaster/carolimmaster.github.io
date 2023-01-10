@@ -1,0 +1,20 @@
+body {
+    box-shadow: inset 0 0 0 1000px ghostwhite;
+    font-family: helvetica;
+}
+
+h1{
+	background-color: red;
+}
+
+#casescheckbox {
+    color: green;
+}
+
+.Coordonnées {
+    color: red;
+}
+
+fieldset{
+    color:aqua;
+}

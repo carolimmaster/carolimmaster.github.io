@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+    font-family: helvetica;
+}
+
+h1{
+    color:indianred;
+}
+
+.Coordonnées {
+    color: darkblue;
+}
+
+{
+    font-size: 15px;
+}
+
+{
+    margin: 5;
+  border: none;
+}

@@ -1,0 +1,16 @@
+body {
+    background-color: gainsboro;
+    font-family: helvetica
+}
+
+#casescheckbox {
+    color: green;
+}
+
+.contactez-nous {
+    color: red;
+}
+
+fieldset{
+    color:aqua;
+}
