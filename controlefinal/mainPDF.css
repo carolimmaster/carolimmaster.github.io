@@ -1,20 +1,61 @@
+/* Style général */
 body {
-    box-shadow: inset 0 0 0 1000px ghostwhite;
-    font-family: helvetica;
+    background-color: lightblue; /* Couleur de l'arrière plan */
+    font-family: helvetica; /* Type de police */
 }
 
-h1{
-	background-color: red;
+h2{
+    color:indianred; /* Couleur du texte */
 }
 
-#casescheckbox {
-    color: green;
+/* En-tête */
+header {
+	align-items: center; /* Aligner le logo et le titre */
 }
 
-.Coordonnées {
-    color: red;
+header h1{
+	padding-right: 20%; /* Marge intérieur gauche */
 }
 
-fieldset{
-    color:aqua;
+/* Avertissement */
+#avertissement {
+	text-align: center; /* Mettre le texte au centre */
+}
+
+#avertissement #avertissement-title {
+	text-transform : uppercase; /* Mettre le texte en majuscule */
+	font-weight: bold; /* Mettre le texte en gras */
+	font-size: 30px; /* Taille du texte */
+	color:indianred; /* Couleur du texte */
+}
+
+#avertissement p span {
+	text-transform : uppercase; /* Mettre le texte en majuscule */
+	font-weight: bold; /* Mettre le texte en gras */
+	color: indianred; /* Couleur du texte */
+}
+
+/* Coordonnées */
+/* Formulaire */
+form {
+	width: 60%; /* Largeur */
+	left: 50%; /* Décalage à partir de la gauche */
+}
+
+form div input, select, textarea {
+	width: 100%; /* Largeur */
+	margin: 1% 0; /* Marge extérieur - première valeur: haut et bas deuxième valeur droite et gauche */
+	padding: 1%; /* Marche intérieur */
+}
+
+form div textarea {
+	height: 150px; /* Hauteur */
+}
+
+/* Spécificités du style destiné à l’impression */
+@media print {
+    h1 {
+        font-size: 50px;
+		color: red;
+    }
 }

@@ -1,138 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-	  <meta charset="utf-8"/>
-	  <title>Controle final</title>
-	  <link rel="stylesheet" type="text/css" href="main.css">
-	  <link rel="stylesheet" type="text/css" href="mainPDF.css" media="print">
+		<!-- Encodage -->
+		<meta charset="UTF-8">
+
+		<!-- Titre de la page -->
+		<title>Controle final</title>
+
+		<!-- CSS personnalisé -->
+		<link rel="stylesheet" type="text/css" href="mainPDF.css">
 	</head>
+
 	<body>
-		<h1>AVERTISSEMENT</h1>
-			
-		<div id="identifiant1">
-			<p>Ce formulaire ne concerne que les demandes relatives aux algorithmes de prises de décisions individuelles dans le cadre UNIQUEMENT du MASTER DROIT DU NUMERIQUE. 
-			</p>
-			
-		</div>
 		
-		<h1> Vous pouvez avoir l'ensemble des informations sur le site suivant : </h1><br>
-		  <button type = "button" onclick = 
-				"alert('Veuillez vous rendre sur le site suivant : https://www.cnil.fr/fr/profilage-et-decision-entierement-automatisee')"> 
-				CNIL
-			</button>
-
-			<button type = "button" onclick = 
-				"alert('Veuillez vous rendre sur le site suivant : https://edpb.europa.eu/our-work-tools/our-documents/guidelines/automated-decision-making-and-profiling_fr')"> 
-				COMITE EUROPEEN DE PROTECTION DES DONNEES
-			</button> 
-
-		<h1> Veuillez confirmer votre choix </h1>
-		<br>
-			  <button type = "button" onclick = 
-					"alert('Vous pouvez continuer à remplir le formulaire')"> 
-					MASTER DROIT DU NUMERIQUE
-				</button>
+		<!-- En-tête -->
+		<header>
+			<img src="./images/upec-logo.png" alt="Logo de l'UPEC">
+			<h1>Université Paris-Est Créteil</h1>
+		</header>
 		
-				<button type = "button" onclick = 
-					"alert('Merci de vous rapprocher du service scolarité de votre master')"> 
-					AUTRES MASTER
-				</button> 
+		<!-- Contenu principal -->
+		<main>
+			<!-- Avertissement -->
+			<div id="avertissement">
+				<span id="avertissement-title">Avertissement</span>
+				<p>Ce formulaire ne concerne que les demandes relatives aux algorithmes de prises de décisions individuelles dans le cadre <span>uniquement </span>du <span>master droit du numérique</span>.</p>
+			</div>
 
-				<div class="Coordonnées">
-					<h1>Coordonnées obligatoires pour que votre demande soit traitée</h1>
-					<p>Ce formulaire a vocation à exercer vos droits uniquement (droit d’accès, droit d’information) correspondant aux traitements de vos données dans le cadre votre candidature au sein du Master droit du numérique via ecandidat, et plus précisément sur : 
-						les critères de sélection;
-						le contenu du traitement algorithmique (code source) comme précisé dans la brochure du Master;
-						le degré et le mode de contribution du traitement algorithmique à la prise de décision de sélection ;
-						es critères retenus par cet algorithme pour trier les candidats.
-						Pour les autres demandes, merci de vous rapprocher du service scolarité pour d'autres informations complémentaires                    
+			<!-- Informations sites -->
+			<div id="informations-sites">
+				<h2>Vous pouvez avoir l'ensemble des informations sur les sites suivants :</h2>
+
+				<a href="https://www.cnil.fr/fr/profilage-et-decision-entierement-automatisee" target="_blank">CNIL</a>
+				<a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/automated-decision-making-and-profiling_fr" target="_blank">COMITE EUROPEEN DE PROTECTION DES DONNEES</a>
+			</div>
+
+			<!-- Confirmation du choix -->
+			<div id="confirmation-choix">
+				<h2>Veuillez confirmer votre choix</h2>
+
+				<button type="button" onclick="alert('Vous pouvez continuer à remplir le formulaire')">MASTER DROIT DU NUMERIQUE</button>
+				<button type="button" onclick="alert('Merci de vous rapprocher du service scolarité de votre master')">AUTRES MASTER</button>
+			</div>
+
+			<!-- Confirmation de l'envoi -->
+			<div id="confirmation-envoi">
+					<h2>Avant de confirmer votre envoi, merci de prendre connaissance des informations suivantes :</h2>
+
+					<h3>Information sur le responsable de traitement</h3>
+					<p>
+						Le traitement relatif à la gestion des demandes faites à partir du site « contact.upec.fr » est mis en œuvre par le UPEC, représenté par son Président en exercice, domicilié au 61, avenue du Général-de-Gaulle, 94 000 CRETEIL. 
+						Le traitement de données concerne uniquement les personnes qui souhaitent faire parvenir une demande d’exercice des droits aux services de l’UPEC pour le master droit du numérique via le formulaire de contact présent sur le site « contact.upec.fr ».
 					</p>
-					<form action="/page-traitement-donnees" method="post">
-						<div>
-						<label for="nom">Votre / vos noms</label>
+					
+					<h3>Information sur la base juridique du traitement/de la collecte de données</h3>
+					<p>Les données personnelles qui sont collectées sont les suivantes : civilité, nom, prénom, email, thème, message et pièce jointe, recueil du consentement RGPD et les réponses formulées à la demande. </p>
+					<p>Vos données sont traitées dans le but de gérer vos demandes.</p>
+					
+					<h4>Cette collecte permet a l’UPEC de :</h4>
+					<ul>
+						<li>Permettre aux usagers d’interagir avec les services de l’université en leur posant des questions;</li>
+						<li>Mettre à disposition un canal sécurisé d’échanges.</li>
+					</ul>
+					<p>
+						Le traitement de vos données est basé sur l’article 6(1)e du règlement général sur la protection des données (RGPD). Le traitement a pour base légale une « mission d’intérêt public ».<br>
+						Obligation de fourniture des informations ainsi que les conséquences éventuelles de leur non-fourniture.<br>
+						Le formulaire de contact prévoit un recueil obligatoire des données (civilité, nom, prénom, email, objet de la demande, thème, message, recueil du consentement RGPD) pour la bonne prise en compte de la demande et son traitement. Sans cette donnée, nous ne pourrons pas répondre à votre demande.
+					</p>
+					
+					<h3>Information sur la durée de conservation et les éventuels destinataires</h3>
+					<p>
+						Selon vos questions, remarques ou signalements, la direction compétente (Direction de ressources humaines, direction des archives départementales, etc.) sera en charge de vous répondre. Ces différentes directions appliquent des durées de conservation différentes selon les traitements qui leur sont propres. Les durées de conservation appliquées seront déterminées en tenant compte du temps de gestion de votre demande.<br>
+						Elles ne peuvent être communiquées qu’aux services concernés au sein de l’université pouvant gérer votre demande.
+						Le traitement ne prévoit pas de prise de décision automatisée.
+					</p>
+					
+					<h3>Information sur les éventuels transferts de données hors UE</h3>
+					<p>Vos données ne font pas l’objet d’un transfert de données en dehors de l’Union Européenne.</p>
+					<p>Comment vous pouvez exercer vos droits sur les données vous concernant ?</p>
+					<p>
+						Vous pouvez accéder et obtenir copie des données vous concernant, vous opposer au traitement de vos données ou les rectifier. Vous disposez également d’un droit à la limitation du traitement de vos données.<br>
+						L'université a nommé auprès de la CNIL une Déléguée à la Protection des Données, que vous pouvez contacter à l’adresse suivante afin d’exercer vos droits ou pour toutes questions relatives à la protection de vos données : dpo@u-pec.fr ou par courrier à Déléguée à la protection des données (DPO), 61, Avenue du Général de Gaulle – 94 000 CRETEIL
+					</p>
+					
+					<h3>Information sur la possibilité d’introduire une requête auprès de la CNIL</h3>
+					<p>Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés ou que le dispositif de contrôle d’accès n’est pas conforme aux règles de protection des données, vous pouvez adresser une réclamation en ligne à la CNIL ou par voie postale. Consultez le site <a href="https://www.cnil.fr" target="_blank">cnil.fr</a> pour plus d’informations sur vos droits.</p>
+					<input type="submit" value="Envoyer ma demande">
+			</div>
+
+			<!-- Informations du traitement -->
+			<div id="informations-traitement">
+				<h2>Informations concernant le traitement de votre demande</h2>
+
+				<button type="button" onclick="alert('Veuillez consulter les articles suivants : l’article 15 du Règlement général sur la protection des données (RGPD) et l’article R311-3-1-2 du Code des relations entre le public et l’administration.')"> SUPPORT DE RECEPTION DES DONNEES</button>
+				<button type="button" onclick="alert('Délai de réponse : article 12.3 du RGPD')">DELAI DE REPONSE</button>
+			</div>
+
+			<!-- Coordonnées -->
+			<div class="coordonnees">
+				<h2>Coordonnées obligatoires pour que votre demande soit traitée</h2>
+
+				<ul>
+					<li>Ce formulaire a vocation à exercer vos droits uniquement (droit d’accès, droit d’information) correspondant aux traitements de vos données dans le cadre votre candidature au sein du Master droit du numérique via ecandidat, et plus précisément sur : les critères de sélection;</li>
+					<li>le contenu du traitement algorithmique (code source) comme précisé dans la brochure du Master;</li>
+					<li>le degré et le mode de contribution du traitement algorithmique à la prise de décision de sélection;</li>
+					<li>Les critères retenus par cet algorithme pour trier les candidats;</li>
+					<li>Pour les autres demandes, merci de vous rapprocher du service scolarité pour d'autres informations complémentaires</li>
+				</ul>
+
+				<!-- Formulaire -->
+				<form action="page-traitement-donnees.php" method="post">
+
+					<label for="nom">Genre</label>
+					<input type="radio" id="madame" name="genre" value="madame">
+					<label for="html">Madame</label>
+					<input type="radio" id="monsieur" name="genre" value="monsieur">
+					<label for="css">Monsieur</label><br>
+
+					<div>
+						<label for="nom">Nom</label>
 						<input type="text" id="nom" name="nom" placeholder="Dupont" required>
-						</div>
-						<div>
-							<label for="prénom">Votre / vos prénoms</label>
-							<input type="text" id="nom" name="prénom" placeholder="Marie" required>
-							</div>
-						<div>
+					</div>
+
+					<div>
+						<label for="prenom">Prénom</label>
+						<input type="text" id="prenom" name="prenom" placeholder="Marie" required>
+					</div>
+
+					<div>
 						<label for="email">Votre e-mail</label>
 						<input type="email" id="email" name="email" placeholder="monadresse@gmail.com" required>
-						</div>
-						<div>
-						<div>
-							<label for="nom">Date d'aujourd'hui</label>
-							<input type="text" id="nom" name="nom" placeholder="10/01/2023" required>
-							</div>
-						<div>
-							<label for="nom">Votre qualité</label>
-							<input type="text" id="nom" name="nom" placeholder="Personne concernée/ titulaire de l'autorité parentale (...)" required>
-							</div>
+					</div>
+
+					<div>
+						<label for="date">Date d'aujourd'hui</label>
+						<input type="date" id="date" name="date" min="2023-01-01">
+					</div>
+
+					<div>
+						<label for="qualite">Votre qualité</label>
+						<input type="text" id="qualite" name="qualite" placeholder="Personne concernée / titulaire de l'autorité parentale (...)" required>
+					</div>
+					
+					<div>
 						<label for="sujet">Votre demande concerne</label>
 						<select name="sujet" id="sujet" required>
-						<option value="" disabled selected hidden>Choisissez le droit concerné</option>
+							<option value="" disabled selected hidden>Choisissez le droit concerné</option>
 							<option value="probleme-compte">Droit d'accès</option>
 							<option value="question-produit">Droit d'opposition</option>
 							<option value="suivi-commande">Droit de rectification</option>
 							<option value="autre">Autre...</option>
 						</select>
-					</form>
-					
-					<h1>Avant de confirmer votre envoi, merci de prendre connaissance des informations suivantes : </h1>
-			
-					<div id="identifiant3">
-						<p>
-							<br>Information sur le responsable de traitement</p></br>
-							Le traitement relatif à la gestion des demandes faites à partir du site « contact.upec.fr » est mis en œuvre par le UPEC, représenté par son Président en exercice, domicilié au 61, avenue du Général-de-Gaulle, 94 000 CRETEIL. Le traitement de données concerne uniquement les personnes qui souhaitent faire parvenir une demande d’exercice des droits aux services de l’UPEC pour le master droit du numérique via le formulaire de contact présent sur le site « contact.upec.fr ».</div>
-							
-							<br>Information sur la base juridique du traitement/de la collecte de données</div></br>
-							Les données personnelles qui sont collectées sont les suivantes : civilité, nom, prénom, email, thème, message et pièce jointe, recueil du consentement RGPD et les réponses formulées à la demande. 
-							
-							Vos données sont traitées dans le but de gérer vos demandes.
-							
-							Cette collecte permet a l’UPEC de :
-							- Permettre aux usagers d’interagir avec les services de l’université en leur posant des questions ; et
-							- Mettre à disposition un canal sécurisé d’échanges.
-							
-							<br>Le traitement de vos données est basé sur l’article 6(1)e du règlement général sur la protection des données (RGPD). Le traitement a pour base légale une « mission d’intérêt public ».</br>
-							
-							<br> Obligation de fourniture des informations ainsi que les conséquences éventuelles de leur non-fourniture.</br>
-							<br>Le formulaire de contact prévoit un recueil obligatoire des données (civilité, nom, prénom, email, objet de la demande, thème, message, recueil du consentement RGPD) pour la bonne prise en compte de la demande et son traitement. Sans cette donnée, nous ne pourrons pas répondre à votre demande.</br>
-							
-							<br>Information sur la durée de conservation et les éventuels destinataires</br>
-							<br>Selon vos questions, remarques ou signalements, la direction compétente (Direction de ressources humaines, direction des archives départementales, etc.) sera en charge de vous répondre. Ces différentes directions appliquent des durées de conservation différentes selon les traitements qui leur sont propres. Les durées de conservation appliquées seront déterminées en tenant compte du temps de gestion de votre demande.</br>
-							
-							Elles ne peuvent être communiquées qu’aux services concernés au sein de l’université pouvant gérer votre demande.
-							
-							<br>Le traitement ne prévoit pas de prise de décision automatisée.</br>
-							
-							<br>Information sur les éventuels transferts de données hors UE</br>
-							<br>Vos données ne font pas l’objet d’un transfert de données en dehors de l’Union Européenne.</br>
-							
-							<br>Comment vous pouvez exercer vos droits sur les données vous concernant ?</br>
-							<br>Vous pouvez accéder et obtenir copie des données vous concernant, vous opposer au traitement de vos données ou les rectifier. Vous disposez également d’un droit à la limitation du traitement de vos données.</br>
-							
-							L'université a nommé auprès de la CNIL une Déléguée à la Protection des Données, que vous pouvez contacter à l’adresse suivante afin d’exercer vos droits ou pour toutes questions relatives à la protection de vos données : dpo@u-pec.fr ou par courrier à Déléguée à la protection des données (DPO), 61, Avenue du Général de Gaulle – 94 000 CRETEIL
-							
-							<br>Information sur la possibilité d’introduire une requête auprès de la CNIL</br>
-							<br>Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés ou que le dispositif de contrôle d’accès n’est pas conforme aux règles de protection des données, vous pouvez adresser une réclamation en ligne à la CNIL ou par voie postale. Consultez le site cnil.fr pour plus d’informations sur vos droits.</br>                         
-						</p>
-						
-					</div>    
-					<input type="submit" value="Envoyer ma demande">
+					</div>
 
-				<h1> Informations concernant le traitement de votre demande </h1>
-			<br>
-			  <button type = "button" onclick = 
-					"alert('Veuillez consulter les articles suivants : l’article 15 du Règlement général sur la protection des données (RGPD) et l’article R311-3-1-2 du Code des relations entre le public et l’administration.')"> 
-					SUPPORT DE RECEPTION DES DONNEES
-				</button>
-		
-				<button type = "button" onclick = 
-					"alert('Délai de réponse : article 12.3 du RGPD')"> 
-					DELAI DE REPONSE
-				</button>
-		</br>
-	</body>
+					<div>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Votre message"></textarea>
+					</div>
+
+					<input type="submit" value="Envoyer">
+				</form>
+			</div>
+		</body>
+	</main>
 </html>
